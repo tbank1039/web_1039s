@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace; }
+
+header {
+  background: #000000; }
+  header .header-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex; }
+    @media screen and (max-width: 1000px) {
+      header .header-container {
+        padding: 0 20px; } }
+    header .header-container img {
+      flex: 1;
+      max-height: 142px;
+      max-width: 142px; }
+    header .header-container nav {
+      flex: 4;
+      color: #FEA406; }
+      header .header-container nav ul {
+        font-size: 0;
+        margin: 0;
+        float: right; }
+        header .header-container nav ul li {
+          font-size: 16px;
+          list-style: none;
+          width: 75px;
+          text-align: center;
+          padding: 61px 10px;
+          opacity: 0.5;
+          display: inline-block; }
+          header .header-container nav ul li:hover {
+            opacity: 1;
+            cursor: pointer;
+            background-color: #1a1a1a; }
+
+#site-wrapper {
+  max-width: 1000px;
+  margin: 0 auto; }
+  @media screen and (max-width: 1000px) {
+    #site-wrapper {
+      padding: 0 20px; } }

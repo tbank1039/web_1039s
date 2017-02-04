@@ -1,0 +1,56 @@
+@import "utils/_variables";
+body {
+    margin: 0;
+    font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+}
+
+header {
+    background: $theme_main;
+    .header-container {
+        max-width: $site_max_width;
+        margin: 0 auto;
+        display: flex;
+        @media screen and (max-width: $site_max_width) {
+            padding: 0 20px;
+        }
+        & img {
+            flex: 1;
+            max-height: 142px;
+            max-width: 142px;
+            // position: relative;
+            // left: -32px;
+        }
+
+        nav {
+            flex: 4;
+            color: $theme_accent_major;
+            ul {
+                font-size: 0;
+                margin: 0;
+                float: right;
+                li {
+                    font-size: 16px;
+                    list-style: none;
+                    width: 75px;
+                    text-align: center;
+                    padding: 61px 10px;
+                    opacity: 0.5;
+                    display: inline-block;
+                    &:hover {
+                        opacity: 1;
+                        cursor: pointer;
+                        background-color: lighten($theme_main, 10%);
+                    }
+                }
+            }
+        }
+    }
+}
+
+#site-wrapper {
+    max-width: $site_max_width;
+    margin: 0 auto;
+    @media screen and (max-width: $site_max_width) {
+        padding: 0 20px;
+    }
+}
